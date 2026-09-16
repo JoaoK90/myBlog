@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/test-post/</loc>
-    <lastmod>2026-09-16T12:10:56+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-16T12:10:56+02:00</lastmod>
     <xhtml:link
@@ -30,6 +27,9 @@
                 hreflang="pt-br"
                 href="http://localhost:1313/pt-br/posts/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/posts/test-post/</loc>
+    <lastmod>2026-09-16T12:10:56+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
@@ -61,26 +61,26 @@
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/css/"
+                hreflang="en"
+                href="http://localhost:1313/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/css/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/css/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/html/"
+                hreflang="en"
+                href="http://localhost:1313/tags/html/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/html/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/html/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
@@ -113,13 +113,13 @@
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/markdown/"
+                hreflang="en"
+                href="http://localhost:1313/tags/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/markdown/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/markdown/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/markdown-syntax/</loc>

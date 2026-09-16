@@ -32,13 +32,13 @@
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/css/"
+                hreflang="en"
+                href="http://localhost:1313/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/css/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/css/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/categories/demonstra%C3%A7%C3%A3o-do-tema/</loc>
@@ -64,26 +64,26 @@
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/html/"
+                hreflang="en"
+                href="http://localhost:1313/tags/html/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/html/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/html/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/tags/hugo/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/hugo/"
+                hreflang="en"
+                href="http://localhost:1313/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/hugo/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/hugo/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/</loc>
@@ -103,13 +103,13 @@
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/markdown/"
+                hreflang="en"
+                href="http://localhost:1313/tags/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/markdown/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/markdown/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/posts/</loc>
@@ -239,13 +239,13 @@
     <lastmod>2023-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/emoji/"
+                hreflang="en"
+                href="http://localhost:1313/tags/emoji/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/emoji/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/tags/emoji/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/posts/emoji-support/</loc>
