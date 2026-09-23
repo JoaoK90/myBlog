@@ -47,6 +47,10 @@ defaultContentLanguage = "en"
   heroTitleLine2 = "Between real and virtual"
   footerText = "Built with Hugo and Mana theme"
 
+  [params.avatar.home]
+    assetPath = "images/joao-between-real-and-virtual-transparent.png"
+    enableResize = true
+
   [params.social]
     github = "https://github.com/JoaoK90/"
     linkedin = "https://www.linkedin.com/in/joaokennedyrlf/"
@@ -87,3 +91,4 @@ defaultContentLanguage = "en"
   name = "About"
   url = "/about/"
   weight = 40
+

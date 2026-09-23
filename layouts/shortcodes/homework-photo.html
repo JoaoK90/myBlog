@@ -1,0 +1,22 @@
+{{- $sources := slice (.Get "src") (.Get "src2") -}}
+<figure class="homework-photo" style="max-width:680px;margin:1.5rem auto;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1rem;align-items:center;">
+    {{- range $index, $src := $sources -}}
+      {{- with $src -}}
+        {{- $resource := $.Page.Resources.GetMatch . -}}
+        {{- if not $resource -}}
+          {{- errorf "Missing homework image %q in %s" . $.Page.File.Path -}}
+        {{- else -}}
+          {{- $alt := $.Get "alt" -}}
+          {{- if eq $index 1 -}}{{- $alt = $.Get "alt2" -}}{{- end -}}
+          <a href="{{ $resource.RelPermalink }}" target="_blank" rel="noopener" title="Open full-size image" aria-label="Open full-size image: {{ $alt }}" style="display:flex;justify-content:center;min-width:0;">
+            <img src="{{ $resource.RelPermalink }}" alt="{{ $alt }}" loading="lazy" style="display:block;width:auto;height:auto;max-width:100%;max-height:min(360px,50vh);object-fit:contain;margin:0;">
+          </a>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  </div>
+  {{- with .Get "caption" }}
+    <figcaption style="font-size:0.85em;line-height:1.5;text-align:center;margin-top:0.5rem;">{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
