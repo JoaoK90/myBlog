@@ -1,3 +1,4 @@
+title = "Joao’s files"
 # =============================================================================
 # Example: Single content folder, single language
 # Content: content/posts/post.md (all content in one folder, no translations)
@@ -40,17 +41,16 @@ defaultContentLanguage = "en"
 [params]
   enableIntegrity = false
   relatedPostsCount = 3
-  description = "Your site description"
-  author = "Your Name"
-  heroTitleLine1 = "YOUR SITE NAME"
-  heroTitleLine2 = "YOUR TAGLINE"
+  description = "Notes on vision, AI, and virtual worlds."
+  author = "Joao Kennedy"
+  heroTitleLine1 = "Joao’s files"
+  heroTitleLine2 = "Between real and virtual"
   footerText = "Built with Hugo and Mana theme"
 
   [params.social]
-    github = "https://github.com/yourusername"
-    linkedin = "https://www.linkedin.com/in/yourprofile"
-    twitter = "yourusername"
-    email = "your.email@example.com"
+    github = "https://github.com/JoaoK90/"
+    linkedin = "https://www.linkedin.com/in/joaokennedyrlf/"
+    email = "joao.kennedy@telecom-sudparis.eu"
 
   [params.buyMeACoffee]
     enabled = false
@@ -62,7 +62,7 @@ defaultContentLanguage = "en"
 
   [params.copyright]
     startYear = 2025
-    owner = "Your Name"
+    owner = "Blog by Joao Kennedy"
 
   [params.admonitions]
     alertStyle = "favicon"
