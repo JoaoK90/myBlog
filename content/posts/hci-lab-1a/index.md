@@ -4,7 +4,7 @@ date = 2026-09-23T23:00:00+02:00
 draft = false
 slug = "hci-lab-1a"
 description = "Setting up Hugo on Windows, fixing installation problems, and choosing a theme for my blog."
-tags = ["HCI", "Lab", "Hugo", "Web Development"]
+tags = ["HCI", "Lab", "Web Development"]
 image = "hugo.webp"
 +++
 

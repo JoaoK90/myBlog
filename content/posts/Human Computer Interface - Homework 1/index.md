@@ -5,13 +5,11 @@ date = 2026-09-23
 draft = false
 slug = "hci-homework-1"
 description = "Everyday examples of affordances, Gestalt principles, and dark patterns."
-tags = ["HCI", "Homework", "Affordances", "Gestalt", "Dark Patterns"]
+tags = ["HCI", "Homework", "Everyday life"]
 image = "good_design.jpg"
 +++
 
 For this assignment, I looked at things I use at home, on campus, and online. Here are my examples and what I would change.
-
-<!-- Before publishing: replace gestalt2.png with the reader photo and obscure the meeting link/password in gestalt1.png. -->
 
 ## Exercise 1: Affordances
 
@@ -51,13 +49,13 @@ Finding the classroom is also unnecessarily difficult. I have to hover over the 
 
 ### The residence card readers
 
-{{< homework-photo src="gestalt2.png" alt="Placeholder for the residence card-reader photo." caption="Photo to add: TSP reader on top, Maisel reader below." >}}
+{{< homework-photo src="gestalt2.jpg" alt="Residence entrance with a turnstile on the right and, on the left, an intercom above the TSP and Maisel card readers." caption="Turnstile on the right. Left, top to bottom: intercom, TSP reader, Maisel reader." >}}
 
 We have two cards here: the TSP student card and the Maisel residence card. At the entrance, there are two readers with no labels saying which card to use. New residents have to try them and eventually memorise the reader shapes.
 
 This is mainly a missing-label and mapping problem. **Gestalt similarity** could help: a shared symbol on each card and its reader would make the pairing easier to recognise.
 
-**My fix:** label the upper reader “TSP” and the lower one “Maisel,” with matching card illustrations. Colour could help too, as long as it isn't the only cue.
+**My fix:** label the middle device “TSP” and the bottom one “Maisel,” with matching card illustrations. Colour could help too, as long as it isn't the only cue.
 
 ## Exercise 3: Dark patterns
 
