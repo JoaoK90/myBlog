@@ -1,7 +1,7 @@
 +++
 title = "HCI — Lab 1B: Getting Started with Unity"
 date = 2026-09-24T00:00:00+02:00
-draft = true
+draft = false
 slug = "hci-lab-1b"
 description = "My first Unity project: materials, prefabs, lighting, physics, and a player capsule."
 tags = ["HCI", "Lab", "Unity"]
