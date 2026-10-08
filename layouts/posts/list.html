@@ -1,0 +1,74 @@
+{{ define "main" }}
+  {{ $allPosts := where site.RegularPages "Type" "posts" }}
+  {{ $paginator := .Paginate $allPosts }}
+  {{ $allTags := slice }}
+  {{ range $allPosts }}
+    {{ range .Params.tags }}
+      {{ $allTags = $allTags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $uniqueTags := $allTags | uniq | sort }}
+
+  <div class="list-container">
+    <header class="list-header">
+      <h1 class="list-title">
+        <span class="list-title-line2">{{ i18n "posts" | upper }}</span>
+      </h1>
+      {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
+      <p class="list-count" role="status" aria-live="polite" aria-atomic="true">
+        <span id="filtered-count">{{ len $allPosts }}</span>
+        <span id="filtered-count-label" data-singular="{{ i18n "postSingular" }}" data-plural="{{ i18n "postPlural" }}">{{ if eq (len $allPosts) 1 }}{{ i18n "postSingular" }}{{ else }}{{ i18n "postPlural" }}{{ end }}</span>
+      </p>
+    </header>
+
+    <div class="filter-accordion">
+      <button class="filter-toggle-btn" id="filter-toggle-btn" type="button"
+        aria-expanded="false" aria-controls="posts-filter-content">
+        <span class="filter-toggle-text">{{ i18n "filters" }}</span>
+        <svg class="filter-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="posts-filter" id="posts-filter-content" hidden>
+        <div class="filter-group filter-group-tags">
+          <label class="filter-label" for="tag-search-input">{{ i18n "tagsLabel" }}</label>
+          <input type="search" id="tag-search-input" class="tag-search-input"
+            placeholder="{{ i18n "searchTags" }}" aria-controls="all-tags-container" autocomplete="off">
+          <div class="filter-tags" id="all-tags-container" role="group" aria-label="Filter posts by tags">
+            {{ range $uniqueTags }}
+              <label class="filter-tag-checkbox">
+                <input type="checkbox" value="{{ . }}" class="filter-tag-input">
+                <span class="filter-tag-label">{{ . }}</span>
+              </label>
+            {{ end }}
+          </div>
+          <p id="tag-search-empty" class="filter-help" role="status" hidden>{{ i18n "searchNoTagsFound" }}</p>
+        </div>
+
+        <div class="filter-group filter-group-words">
+          <label for="post-search-input" class="filter-label">Search posts</label>
+          <input type="search" id="post-search-input" class="tag-search-input"
+            placeholder="Search for words..." aria-describedby="post-search-help"
+            aria-controls="posts-container" autocomplete="off">
+          <p id="post-search-help" class="filter-help">Find posts containing any of these words in their title or text.</p>
+        </div>
+        <button id="clear-filters" class="filter-clear-btn" type="button">{{ i18n "clearFilters" }}</button>
+      </div>
+    </div>
+
+    {{/* Include every post so filtering also finds matches beyond the first page. */}}
+    <div class="posts-list" id="posts-container" data-page-size="{{ $paginator.PagerSize }}" data-initial-page="{{ $paginator.PageNumber }}">
+      {{ range $allPosts }}
+        {{ partial "post-card.html" (dict "page" . "limit" 3 "searchable" true) }}
+      {{ end }}
+    </div>
+    <p id="posts-no-results" class="posts-no-results" role="status" hidden>No posts match your search. Try another word or clear the filters.</p>
+
+    <nav id="posts-pagination" class="pagination posts-pagination" aria-label="Posts pagination" hidden>
+      <button id="posts-page-prev" class="pagination-link" type="button">{{ i18n "paginationPrev" }}</button>
+      <span id="posts-page-info" class="pagination-info" aria-live="polite"></span>
+      <button id="posts-page-next" class="pagination-link" type="button">{{ i18n "paginationNext" }}</button>
+    </nav>
+    {{ partial "back-to-home.html" . }}
+  </div>
+{{ end }}

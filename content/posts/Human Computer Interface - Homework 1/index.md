@@ -1,6 +1,6 @@
 +++
 title = "Why Is This So Annoying?"
-date = 2026-09-23
+date = 2026-10-08
 draft = false
 slug = "hci-homework-1"
 description = "Small design choices that make everyday life easier... or should."

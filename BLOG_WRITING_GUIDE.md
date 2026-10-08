@@ -13,7 +13,7 @@ Every post begins with a short introduction before the first heading. Usually 80
 
 A connection outside class can help, but it should be relevant rather than forced. Explain specialised terms at their first appearance. Someone without HCI, Hugo, or Unity experience should understand the opening.
 
-Warmth comes from specific details, small frustrations, humour, and honest reactions. Avoid dramatic narration, generic lessons, and polished slogans. Read the text aloud: would João actually say it?
+Natural writing comes from João's own wording and specific details about what he did. Preserve humour and reactions he supplied, but don't invent jokes, witty asides, emotions, or polished closing lines to make a post feel human. Avoid dramatic narration and generic lessons. Read the text aloud: would João actually say it?
 
 ## Shape the rest around the subject
 
@@ -67,3 +67,13 @@ Use the author's edited version of “Why Is This So Annoying?” as a voice ref
 - When asked for English correction only, fix clear grammar, spelling, agreement, and broken constructions. Keep deliberate informal wording, jokes, opinions, punctuation used for voice, and valid British or American spellings. Explain any sentence that needed substantial grammatical repair.
 
 These preferences do not remove the need to check factual claims when researching or drafting new posts.
+
+## João's edits to the Unity lab — 9 October 2026
+
+Use his rewritten opening and material section as the reference for lab posts. He prefers a direct account of what he built and how it works, with brief explanations where needed.
+
+- Preserve his title, description, and edited paragraphs; repair their English without replacing his wording with a different voice.
+- Write straightforward headings such as “Testing the lighting” and “Adding the score and pickup sound”.
+- Describe concrete actions and results. Don't add a lesson, reflection, or clever comment after every step.
+- Keep theoretical introductions short. His shorter Unity introduction takes precedence over the usual introduction length above.
+- Human writing does not require jokes. Keep the tone simple and personal, without manufacturing humour or enthusiasm.

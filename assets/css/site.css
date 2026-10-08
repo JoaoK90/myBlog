@@ -30,11 +30,18 @@ body {
 body::before { opacity: 0.018; }
 
 .hero-title { gap: 0.65rem; }
+.hero-home .hero-text { min-width: 0; container-type: inline-size; }
 .hero-title-line2 {
   font-size: clamp(1.6rem, 3vw, 2.65rem);
   font-weight: 500;
   color: var(--accent-light-purple);
   -webkit-text-stroke: 0;
+}
+.hero-home .hero-title-line2 {
+  font-size: clamp(0.85rem, 2.5vw, 1.8rem);
+  font-size: clamp(0.85rem, 5.4cqi, 1.8rem);
+  white-space: nowrap;
+  letter-spacing: -0.025em;
 }
 .hero-subtitle { opacity: 1; line-height: 1.65; }
 .hero-logo { animation: none; filter: none; }
@@ -119,6 +126,51 @@ body::before { opacity: 0.018; }
   .post-image > a { display: block; height: 100%; }
   .homework-photo { margin-block: 1.75rem; }
 }
+
+@media (min-width: 769px) {
+  .hero-home .hero-content { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+/* Posts filters: a complete tag list and full-text search. */
+#posts-filter-content[hidden],
+#all-tags-container .filter-tag-checkbox[hidden],
+#posts-container .post-card[hidden],
+#posts-pagination[hidden],
+#posts-no-results[hidden],
+#tag-search-empty[hidden] { display: none; }
+
+.posts-filter.expanded { max-height: none; }
+.filter-group-words { flex-basis: 100%; min-width: 0; }
+#all-tags-container { max-height: none; overflow: visible; min-height: 0; }
+.filter-tag-checkbox { position: relative; }
+.filter-tag-input {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.filter-tag-input:focus-visible + .filter-tag-label {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+.filter-tag-input:checked + .filter-tag-label { color: var(--bg-deep); }
+.filter-help { margin: 0.35rem 0 0; color: var(--text-muted); font-size: 0.8125rem; line-height: 1.6; }
+#clear-filters { margin-top: 0; margin-left: auto; }
+#posts-container { scroll-margin-top: 6rem; }
+.posts-no-results {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+.posts-pagination { gap: 0.75rem; }
+.posts-pagination button { font: inherit; cursor: pointer; border: 1px solid var(--border-color); }
+.posts-pagination button:disabled { opacity: 0.45; cursor: default; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

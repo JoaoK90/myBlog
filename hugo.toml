@@ -44,7 +44,7 @@ defaultContentLanguage = "en"
   description = "Notes on vision, AI, and virtual worlds."
   author = "Joao Kennedy"
   heroTitleLine1 = "Joao’s files"
-  heroTitleLine2 = "Between real and virtual"
+  heroTitleLine2 = "somewhere between real and virtual"
   footerText = "Built with Hugo and Mana theme"
 
   [params.avatar.home]
@@ -65,7 +65,6 @@ defaultContentLanguage = "en"
     lightTheme = "catppuccin-frappe"
 
   [params.copyright]
-    startYear = 2025
     owner = "Blog by Joao Kennedy"
 
   [params.admonitions]
@@ -81,11 +80,6 @@ defaultContentLanguage = "en"
   name = "Posts"
   pageRef = "/posts"
   weight = 20
-
-[[menus.main]]
-  name = "Tags"
-  pageRef = "/tags"
-  weight = 30
 
 [[menus.main]]
   name = "About"
