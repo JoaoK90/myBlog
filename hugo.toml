@@ -5,7 +5,7 @@ title = "Joao’s files"
 # See: https://gohugo.io/content-management/multilingual/
 # =============================================================================
 
-baseURL = 'https://example.com/'
+baseURL = 'https://joaok90.github.io/myBlog/'
 theme = "mana"
 defaultContentLanguage = "en"
 
@@ -89,6 +89,6 @@ defaultContentLanguage = "en"
 
 [[menus.main]]
   name = "About"
-  url = "/about/"
+  pageRef = "/about"
   weight = 40
 

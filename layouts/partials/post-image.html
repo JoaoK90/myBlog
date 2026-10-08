@@ -1,0 +1,16 @@
+{{ $resolved := partial "post-image-resolve.html" . }}
+{{ $image := $resolved.image }}
+{{ $imageResource := $resolved.imageResource }}
+
+{{ if $image }}
+  <div class="post-image">
+    <a href="{{ .RelPermalink }}" onclick="event.stopPropagation();" aria-label="{{ i18n "readMore" }} {{ .Title }}">
+      <img
+        src="{{ if $imageResource }}{{ $imageResource.RelPermalink }}{{ else }}{{ $image | relURL }}{{ end }}"
+        alt="{{ .Params.imageAlt | default (printf "%s — cover image" .Title) }}"
+        loading="lazy"
+        width="{{ if $imageResource }}{{ $imageResource.Width }}{{ else }}1200{{ end }}"
+        height="{{ if $imageResource }}{{ $imageResource.Height }}{{ else }}630{{ end }}">
+    </a>
+  </div>
+{{ end }}

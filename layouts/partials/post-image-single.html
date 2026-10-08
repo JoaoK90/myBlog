@@ -1,0 +1,14 @@
+{{ $resolved := partial "post-image-resolve.html" . }}
+{{ $image := $resolved.image }}
+{{ $imageResource := $resolved.imageResource }}
+
+{{ if $image }}
+  <div class="post-image-single">
+    <img
+      src="{{ if $imageResource }}{{ $imageResource.RelPermalink }}{{ else }}{{ $image | relURL }}{{ end }}"
+      alt="{{ .Params.imageAlt | default (printf "%s — cover image" .Title) }}"
+      loading="eager"
+      width="{{ if $imageResource }}{{ $imageResource.Width }}{{ else }}1200{{ end }}"
+      height="{{ if $imageResource }}{{ $imageResource.Height }}{{ else }}630{{ end }}">
+  </div>
+{{ end }}

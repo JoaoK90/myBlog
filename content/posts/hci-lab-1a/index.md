@@ -8,7 +8,11 @@ tags = ["HCI", "Lab", "Web Development"]
 image = "hugo.webp"
 +++
 
-For Lab 1A, I had to set up a blog to document my coursework. I started with the setup from class, then changed the theme and customised it to make Joao’s Files. Getting Hugo to run took more work than I expected.
+This blog is part of my Human–Computer Interaction coursework, but I wanted it to feel like a place of my own. Before I could share any projects, I had to get the site running.
+
+I used **Hugo**, a tool that turns text files and a theme into web pages. That means I can write a post, add its images, and let Hugo build the website. Simple enough in principle. On my Windows setup, getting there involved competing installations, missing files, and a few errors I didn't immediately understand.
+
+Here is how I worked through those problems, published the first version on GitHub Pages, and chose the look of Joao’s Files.
 
 ## The first setup
 

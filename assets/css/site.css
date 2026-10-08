@@ -1,0 +1,126 @@
+/* Joao's Files: site-specific refinements, loaded after Mana's styles. */
+:root {
+  color-scheme: dark;
+  --bg-deep: #0b1020;
+  --accent-primary: #baa3e5;
+  --accent-mid-purple: #c5b0ed;
+  --accent-light-purple: #d8c8f5;
+  --accent-hover: #e0d4f8;
+  --accent-secondary: #8dbacb;
+  --glass-surface: rgba(172, 188, 224, 0.045);
+  --glass-border: rgba(185, 199, 229, 0.14);
+  --text-primary: #edf0f7;
+  --text-secondary: #bfc8da;
+  --text-muted: #9aa8c1;
+  --accent-primary-rgba-03: rgba(186, 163, 229, 0.12);
+  --accent-primary-rgba-05: rgba(186, 163, 229, 0.2);
+  --accent-light-purple-rgba-01: rgba(216, 200, 245, 0.08);
+  --accent-light-purple-rgba-03: rgba(216, 200, 245, 0.12);
+  --accent-mid-purple-rgba-05: rgba(197, 176, 237, 0.045);
+  --accent-mid-purple-rgba-01: rgba(197, 176, 237, 0.08);
+  --accent-mid-purple-rgba-02: rgba(197, 176, 237, 0.14);
+  --tag-bg: rgba(186, 163, 229, 0.065);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  background-image: radial-gradient(ellipse at 50% 0%, #14213a 0%, var(--bg-deep) 65%);
+}
+
+body::before { opacity: 0.018; }
+
+.hero-title { gap: 0.65rem; }
+.hero-title-line2 {
+  font-size: clamp(1.6rem, 3vw, 2.65rem);
+  font-weight: 500;
+  color: var(--accent-light-purple);
+  -webkit-text-stroke: 0;
+}
+.hero-subtitle { opacity: 1; line-height: 1.65; }
+.hero-logo { animation: none; filter: none; }
+
+.post-card, .post-image, .post-image-single, .post-toc,
+.related-post-item, .nav-link { border-radius: 12px; }
+.post-card {
+  transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+.post-card:hover {
+  border-color: rgba(186, 163, 229, 0.45);
+  background-color: rgba(172, 188, 224, 0.07);
+}
+.post-image img[src$="design-face.jpg"] { object-fit: contain; background: #ededed; }
+.post-tag { border-radius: 6px; }
+.post-tag:hover { box-shadow: none; }
+
+.single-post { max-width: 780px; }
+.post-image-single { padding: 0; box-shadow: none; }
+.post-image-single img { border-radius: 11px; }
+.post-title-main { font-size: clamp(1.9rem, 4vw, 2.65rem); letter-spacing: -0.025em; }
+.post-description-main { font-size: 1.05rem; line-height: 1.7; max-width: 65ch; }
+.post-content-main { font-size: 1.075rem; line-height: 1.85; }
+.post-content-main p { margin-bottom: 1.25rem; }
+.post-content-main h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.7rem);
+  line-height: 1.35;
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
+  scroll-margin-top: 6rem;
+}
+.post-content-main h3 {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  scroll-margin-top: 6rem;
+}
+.post-content-main a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+.post-content-main img { border-radius: 12px; border: 1px solid var(--border-color); }
+.breadcrumb-list a, .related-post-link strong { color: var(--accent-primary); }
+.post-toc { background: #10182a; }
+.post-toc::before { background: none; }
+
+/* Body photos stay compact; the opening cover keeps its full width. */
+.homework-photo { max-width: 680px; margin: 2rem auto; }
+.homework-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+.homework-photo-link { display: flex; justify-content: center; min-width: 0; border-radius: 12px; }
+.homework-photo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(360px, 50vh);
+  object-fit: contain;
+  margin: 0;
+  background: rgba(172, 188, 224, 0.04);
+}
+.homework-photo figcaption {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0.75rem auto 0;
+  max-width: 62ch;
+}
+
+:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 4px; }
+
+@media (max-width: 768px) {
+  .header-logo .logo-link { font-size: 1.05rem; }
+  .hero-title-line2 { font-size: clamp(1.55rem, 6vw, 2rem); }
+  .hero-section { padding-inline: 0; margin-bottom: 2rem; }
+  .post-content-main { font-size: 1rem; line-height: 1.85; }
+  .post-content-main h2 { margin-top: 2.5rem; }
+  .post-image { height: auto; aspect-ratio: 16 / 10; }
+  .post-image > a { display: block; height: 100%; }
+  .homework-photo { margin-block: 1.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .post-card { transition: none; }
+}

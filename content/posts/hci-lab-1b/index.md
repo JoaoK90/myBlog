@@ -8,7 +8,11 @@ tags = ["HCI", "Lab", "Unity"]
 image = "unity-starting-main-photo.png"
 +++
 
-For Lab 1B, I installed Unity and started a small 3D scene to learn the basics. I added walls, fences, a bridge, and a player. The project is still in progress; these are the steps I've completed so far.
+A bridge, some fences, and a ball don't make much of a game yet. They do give me a useful place to start: something to walk around, light, and test. For this lab, I began learning how to put that kind of scene together.
+
+**Unity** is a game engine: it provides tools for building interactive worlds, including their objects, lighting, movement, and physics. Instead of building all of those systems myself, I can use the editor to assemble a scene and learn how its parts behave.
+
+This is my first Unity project. Below are the steps I've completed so far, from an empty world to a player capsule with a camera. Some parts still need work.
 
 ## Installation and first project
 

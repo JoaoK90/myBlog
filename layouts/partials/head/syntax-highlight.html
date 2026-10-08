@@ -1,0 +1,4 @@
+{{- with resources.Get "css/syntax-dark.css" -}}
+  {{- $syntax := . | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" id="syntax-dark-theme"{{ if site.Params.enableIntegrity }} integrity="{{ $syntax.Data.Integrity }}"{{ end }}>
+{{- end -}}
