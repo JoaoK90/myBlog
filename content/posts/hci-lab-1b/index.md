@@ -11,7 +11,7 @@ image = "unity-starting-main-photo.png"
 
 **Unity** is a tool for building games and interactive 3D scenes. I used it in this lab to put together a small environment with a floor, brick walls, fences, and a stone bridge. Then I added a player so I could explore it.
 
-The first version ended with three things still missing: items to collect, a sound when collecting them, and a score counter. Now it's all finished. The scene has a small task to complete: collecting four pink floating balls.
+After the first version, I still wanted to add three optional features: items to collect, a sound when collecting them, and a score counter. Now it's all finished. The scene has a small task to complete: collecting four pink floating balls.
 
 ## Starting with an empty world
 
@@ -75,13 +75,15 @@ With the player in place, I could walk around and check the layout from its pers
 
 ## Adding the collectible balls
 
+The first-week task was to set up Unity. Once I could explore my scene, I wanted to keep going and give the player something to do, so I added collectibles, a score counter, and a pickup sound as an optional extension.
+
 I added four pink floating balls around the scene. When the player touches one, it disappears and adds one point to the score. All four use the same `Collectible` script.
 
 I set each ball's collider to **Is Trigger**, so it detects contact with the player without blocking movement. I also added a Rigidbody with gravity disabled and **Is Kinematic** enabled. This keeps the balls in the positions where I placed them.
 
 The script identifies the player through its Character Controller. It marks the ball as collected, calls the score manager, and removes the ball. I grouped the four balls under **Collectibles** in the Hierarchy. The screenshot below shows the layout with all four in place.
 
-{{< homework-photo src="collectibles-scene-overview.png" alt="Unity Scene view showing the bridge, walls, fenced area, and four pink collectible spheres, with the Collectibles group expanded in the Hierarchy." caption="The scene with all four collectibles spheres in place." >}}
+{{< homework-photo src="collectibles-scene-overview.png" alt="Unity Scene view showing the bridge, walls, fenced area, and four pink collectible spheres, with the Collectibles group expanded in the Hierarchy." caption="The scene with all four collectible spheres in place." >}}
 
 ## Adding the score and pickup sound
 
@@ -101,9 +103,9 @@ The screenshot below shows the gate open and the ball inside.
 
 ## The finished project
 
-The tasks I had left unfinished are now complete. I can move around, collect all four balls, hear the pickup sound, and see the score reach four. The gate animation also works, giving access to the ball inside the fence.
+The extra features are now working. I can move around, collect all four balls, hear the pickup sound, and see the score reach four. The gate animation also works, giving access to the ball inside the fence.
 
-Making this project was a great oportunity for learning Unity, and I am looking forward to keep learning it even more, it seems to be a very complete platform/engine, even for more serious works.
+Making this project was a great opportunity for learning Unity, and I am looking forward to learning even more about it. It seems to be a very complete platform/engine, even for more serious work.
 
 > See you next time!
 
