@@ -5,8 +5,7 @@ draft = false
 slug = "breaking-ancient-encryption"
 description = "Implementing some really basic ciphers in Python and hiding messages inside images."
 tags = ["Digital Content Protection", "Cryptography", "Python", "Image Processing"]
-image = "images/example3lego.png"
-imageAlt = "The Lego logo before and after simple substitution: the colours change, but the lettering remains readable."
+image = "images/coverimage.jpg"
 +++
 
 I can change the colours of a photograph and still recognise the face in it. Even after moving pixels around, the outline of a hat or a large uniform area may give the image away. That is what I wanted to investigate: how much information remains visible after an image has been transformed, and whether looking scrambled is enough to keep its content private.
