@@ -21,6 +21,8 @@ For an analysis: situation → observation → concept → effect on the user �
 
 For a lab: explain what was being built, then group steps by what they taught. Show useful screenshots, describe what changed, and explain problems or decisions that matter. Don't narrate every click. Clearly separate completed work from what is still missing.
 
+The course asks lab posts to document the approach, problems encountered, how they were solved, and what another beginner should consider before following the same path. Cover those points using real experiences; don't invent problems to fill the criteria. When João identifies optional work, make the distinction from the required task clear and explain his reason for continuing.
+
 Use an interesting title and a specific description. Keep captions short and factual. The text should still make sense without the screenshots.
 
 ## Length and accuracy

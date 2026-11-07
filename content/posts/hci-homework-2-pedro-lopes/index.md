@@ -64,13 +64,9 @@ The tap tells the user where contact happened. The movement adds a physical resp
 
 {{< homework-photo src="impacto-components.png" alt="Impacto's opened bracelet showing the microcontroller, batteries, solenoid, muscle stimulator, and electrodes." caption="Inside Impacto. Figure 4 from Lopes, Ion and Baudisch's [2015 paper](https://doi.org/10.1145/2807442.2807443)." >}}
 
-The authors also demonstrated football and baseball interactions. For baseball, the actuator taps a physical prop while muscle stimulation moves the wrist, producing feedback when the virtual ball meets the bat. This is a detail I like: the object in the user's hand does not have to reproduce every property of the object shown in VR.
+The authors also demonstrated football and baseball interactions. For baseball, the actuator taps a physical prop while muscle stimulation moves the wrist, producing feedback when the bat hits the virtual ball.
 
-There is also a connection to my first Unity project. The paper's simulators were built in Unity, where collisions triggered messages to the wearable device. I have only used collisions for much simpler things so far, but I can understand that starting point: an event in the scene happens, and another system responds. Here, the response reaches the user's arm.
-
-The study analysed **12 participants**, who rated combinations of tactile and muscle stimulation while experiencing a simplified boxing simulation. The combined feedback was rated as more realistic than either technique alone. That supports the main idea, although it is a small, controlled study.
-
-The paper also discusses practical limitations: electrodes need correct placement and calibration, the system has latency, and simulating more impact locations requires more units. I would be excited to try it. I would also want to know how comfortable the setup remains after a longer session.
+The paper also discusses practical limitations: electrodes need correct placement and calibration, the system has latency, and simulating more impact locations requires more units. I am very excited to try it one day in the future.
 
 ## Would I actually buy something like this?
 
@@ -82,11 +78,11 @@ It shares the ambition of making virtual events physically noticeable, but uses 
 
 Even as someone who likes games, I would think carefully before spending that much on another accessory. I use a computer for studying, working, communicating, and playing. A specialised wearable needs compatible content and a reason for me to keep putting it on. The demonstration can be impressive while the everyday value remains harder to justify.
 
-Professional training offers another possibility. Rubens Barrichello is an example I already knew: the former Formula One driver uses a racing simulator at home, and SimPad publishes his account of practising with his sons, Dudu and Fefo. [The manufacturer's page includes that testimonial](https://www.simpad.com.br/).
+Professional training offers another possibility. Racing or flight rig simulators are increadibly expensive, and I would like to cite an example I know: Rubens Barrichello, a former Formula One driver that uses a racing simulator at home, and practice it with his sons.
 
 {{< homework-photo src="rubens-simulator.jpg" alt="Acelerados video thumbnail showing Rubens Barrichello seated at his racing simulator with a steering wheel and screens." caption="Rubinho's simulator, shown in this [Acelerados video](https://www.youtube.com/watch?v=s_vlOjfqqog). Image: Acelerados." >}}
 
-That makes the cost easier for me to understand: equipment can have value beyond a few entertaining sessions when it supports repeated practice. I can imagine richer physical feedback contributing to training too, provided it teaches useful responses. Showing that someone feels immersed would still be different from showing that they perform better afterwards.
+That makes the cost easier to understand: equipment can have value beyond a few entertaining sessions.
 
 ## Some ideas need time
 
@@ -96,7 +92,7 @@ I see these unusual interfaces with that possibility in mind. Some may remain ex
 
 Theme parks are one place where I can imagine trying expensive, specialised interfaces without buying them. I remember Disney's **Spider-Man W.E.B. Adventure**, where I made Spider-Man's web-shooting gesture to catch escaping Spider-Bots. It was so responsive that I really felt as if I were shooting webs. [Disney describes the attraction's gesture recognition](https://news.disneylandparis.com/en/avengers-campus/).
 
-That experience used a different mechanism from Impacto, but it made the appeal of bodily interaction very clear to me. I will return to theme parks and the idea of convincing virtual worlds in the next post, when I discuss Ivan Sutherland's *The Ultimate Display*.
+I will return to theme parks and the idea of convincing virtual worlds in the next post, when I discuss Ivan Sutherland's *The Ultimate Display*.
 
 *Written for Homework 2, Lecture 4, of my Human–Computer Interaction course at Télécom SudParis.*
 
