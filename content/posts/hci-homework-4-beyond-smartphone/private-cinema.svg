@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">My own cinema</title>
+  <desc id="desc">Concept sketch of a person lying on a bed wearing lightweight glasses, watching a large virtual screen in the room. Dashed purple lines mark the screen. A pointer selects the single Pause control.</desc>
+  <rect width="960" height="540" fill="#0b1020"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="56" font-size="32" font-weight="600" fill="#edf0f7">My own cinema</text>
+    <text x="774" y="54" font-size="15" fill="#9aa8c1" letter-spacing="1.5">CONCEPT SKETCH</text>
+    <text x="82" y="105" font-size="18" fill="#baa3e5">Virtual screen</text>
+    <text x="752" y="461" font-size="18" fill="#bfc8da">Real room</text>
+  </g>
+  <g fill="none" stroke="#bfc8da" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M899 128V442H52" opacity=".45"/>
+    <path d="M455 393H875V429H455ZM474 429V465M855 429V465"/>
+    <path d="M781 392L769 365Q794 355 824 368L841 393"/>
+    <circle cx="774" cy="339" r="32"/>
+    <path d="M747 324L766 322L768 336L742 338M766 324L797 325" stroke="#8dbacb"/>
+    <path d="M749 359L696 374L629 372L587 383M697 375L655 345L615 354M694 374L650 385L592 392M629 372L548 363L503 378M589 383L531 382L499 391"/>
+    <path d="M613 354L600 346M592 392L574 392" stroke-width="2"/>
+  </g>
+  <g fill="none" stroke="#baa3e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 127L555 143V330L82 348Z" stroke-dasharray="9 7"/>
+    <path d="M107 304L210 215L282 279L376 187L530 301" stroke-width="2" opacity=".7"/>
+    <circle cx="169" cy="180" r="19" stroke-width="2" opacity=".7"/>
+    <path d="M742 331L577 274M742 331L576 169" stroke="#8dbacb" stroke-width="2" stroke-dasharray="4 8" opacity=".65"/>
+    <rect x="252" y="368" width="123" height="41" rx="20" stroke-width="2.5"/>
+  </g>
+  <text x="313" y="395" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#edf0f7">Pause</text>
+  <g fill="none" stroke="#8dbacb" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M401 356L401 383L408 377L416 392L423 388L415 374L426 374Z" fill="#0b1020"/>
+    <path d="M395 374L379 382" stroke-dasharray="3 5"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">A shared model</title>
+  <desc id="desc">Concept sketch of two people discussing a shared three-dimensional model above a real table. The remote colleague and the model use dashed purple lines. An annotation points to the model, with a single Stop sharing control.</desc>
+  <rect width="960" height="540" fill="#0b1020"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="56" font-size="32" font-weight="600" fill="#edf0f7">A shared model</text>
+    <text x="774" y="54" font-size="15" fill="#9aa8c1" letter-spacing="1.5">CONCEPT SKETCH</text>
+    <text x="106" y="139" font-size="18" fill="#bfc8da">Here</text>
+    <text x="730" y="139" font-size="18" fill="#baa3e5">Remote</text>
+  </g>
+  <g fill="none" stroke="#bfc8da" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M251 363L663 363L720 392H214Z"/>
+    <path d="M236 393V453M697 393V453M283 363V442M646 363V442"/>
+    <ellipse cx="159" cy="211" rx="37" ry="44"/>
+    <path d="M126 194L139 188L173 190L192 201M143 193L139 206L168 207L172 194" stroke="#8dbacb"/>
+    <path d="M142 255L133 278Q111 282 105 310L102 369M176 255L186 276L228 307L300 295"/>
+    <path d="M105 309L134 338L220 351M300 295L318 285L329 288M220 351L243 348"/>
+    <path d="M133 279L134 392L168 411L171 453M134 392L105 413L99 453"/>
+  </g>
+  <g fill="none" stroke="#baa3e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 7">
+    <ellipse cx="790" cy="211" rx="37" ry="44"/>
+    <path d="M773 255L762 276L711 305L630 295M807 255L822 278Q843 285 846 310L848 374"/>
+    <path d="M846 310L814 343L743 351M630 295L614 288L605 292"/>
+    <path d="M816 278L815 392L783 411L779 453M815 392L848 413L855 453"/>
+    <path d="M414 254L493 215L562 250L482 290ZM414 254V327L482 361V290M562 250V323L482 361M493 215V287L562 323M414 327L493 287"/>
+  </g>
+  <g fill="none" stroke="#8dbacb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="551" cy="255" r="12"/>
+    <path d="M561 248L626 197H714"/>
+    <path d="M341 286L341 312L348 307L355 321L362 318L355 304L366 304Z" fill="#0b1020"/>
+    <path d="M365 286L414 270" stroke-dasharray="4 6"/>
+  </g>
+  <text x="633" y="185" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8dbacb">Look here</text>
+  <rect x="386" y="473" width="188" height="41" rx="20" fill="none" stroke="#baa3e5" stroke-width="2.5"/>
+  <text x="480" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#edf0f7">Stop sharing</text>
+</svg>
