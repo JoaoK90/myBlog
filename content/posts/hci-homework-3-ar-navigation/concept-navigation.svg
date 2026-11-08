@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">01 · Follow the route</title><desc id="desc">Direction cues attached to the environment, with a clear arrival state.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8de0d0"/></marker></defs>
+<rect width="1000" height="560" rx="22" fill="#0b1020"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="42" y="49" fill="#edf0f7" font-size="27" font-weight="600">01 · Follow the route</text>
+<text x="42" y="79" fill="#bfc8da" font-size="18">Direction cues attached to the environment, with a clear arrival state.</text>
+
+<path d="M50 125H950V495H50Z" fill="#131e30" stroke="#31415b" stroke-width="2"/>
+<path d="M50 495L320 235H610L950 495" fill="#203148" stroke="#64728b" stroke-width="3"/>
+<path d="M320 235V125M610 235V125M50 125L320 235M950 125L610 235" fill="none" stroke="#64728b" stroke-width="3"/>
+<path d="M115 440V210H230V329M755 390V205H854V463" fill="none" stroke="#64728b" stroke-width="3"/>
+<path d="M516 466L490 394L425 332L337 307L266 315" fill="none" stroke="#8de0d0" stroke-width="12" stroke-linecap="round" stroke-dasharray="28 22"/>
+<path d="M462 367L420 330L362 314" fill="none" stroke="#8de0d0" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="112" y="197" width="123" height="246" rx="4" fill="#8de0d0" fill-opacity="0.08" stroke="#8de0d0" stroke-width="3"/>
+<ellipse cx="266" cy="328" rx="9" ry="21" transform="rotate(72 266 328)" fill="#8de0d0"/>
+<ellipse cx="273" cy="350" rx="9" ry="21" transform="rotate(72 273 350)" fill="#8de0d0"/>
+<rect x="555" y="153" width="352" height="94" rx="12" fill="#10182a" stroke="#baa3e5" stroke-width="2"/>
+<text x="576" y="187" fill="#d8c8f5" font-size="21" font-weight="600">NEXT TURN: LEFT</text>
+<text x="576" y="219" fill="#bfc8da" font-size="19">The trail points to the doorway.</text>
+<path d="M555 215L359 298" stroke="#baa3e5" stroke-width="2" fill="none"/>
+<rect x="556" y="407" width="352" height="61" rx="10" fill="#10182a" stroke="#8de0d0" stroke-width="2"/>
+<text x="576" y="446" fill="#8de0d0" font-size="21">ARRIVAL: highlight the destination</text>
+
+<text x="42" y="535" fill="#9aa8c1" font-size="16">Concept drawing · proposed view through AR glasses</text>
+</g></svg>

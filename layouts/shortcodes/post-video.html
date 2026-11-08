@@ -1,0 +1,15 @@
+{{- $source := .Get "src" -}}
+{{- $resource := .Page.Resources.GetMatch $source -}}
+{{- if not $resource -}}
+  {{- errorf "Missing post video %q in %s" $source .Page.File.Path -}}
+{{- else -}}
+  <figure class="homework-photo">
+    <video controls preload="metadata" playsinline aria-label="{{ .Get "label" | default "Project recording" }}" style="display:block;width:100%;height:auto;max-height:420px;border-radius:12px;">
+      <source src="{{ $resource.RelPermalink }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ $resource.RelPermalink }}">Open the recording</a>.
+    </video>
+    {{- with .Get "caption" -}}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end -}}
+  </figure>
+{{- end -}}
