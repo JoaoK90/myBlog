@@ -5,8 +5,8 @@ draft = false
 slug = "talking-to-a-local-ai-in-unity"
 description = "Building a local chatbot in Unity and giving it some context about Joao's Files."
 tags = ["HCI", "Lab", "Unity", "AI", "LLM"]
-image = "cover.png"
-imageAlt = "A fantasy character and dialogue from UndreamAI's LLM for Unity demonstration."
+image = "CaneliFinal.png"
+imageAlt = "Caneli, a smiling canelé plush, beside a Unity chat about Joao's Files on an abstract background."
 +++
 
 In my [first Unity project]({{< relref "posts/hci-lab-1b" >}}), I built a small world where I could walk around and collect objects. This time, I wanted an interaction through conversation: typing a message and getting an answer inside the application.
@@ -97,6 +97,12 @@ I also found a bug when leaving Unity to answer while I opened another window. T
 
 The local conversation works, and the waiting indicator makes the delay easier to understand. The longer pause with added context and the layout failure when switching windows were the main problems I observed in these tests.
 
+## Giving the character a face
+
+To finish, I added a canelé plush, placed it beside the chat and added an abstract background. With the AI now being called **Caneli**.
+
+{{< homework-photo src="Caneli1.png" alt="Caneli beside the Unity chat with an initial greeting and an abstract background." src2="CaneliFinal.png" alt2="Caneli beside a conversation about the purpose of Joao's Files and how to get in touch." caption="Caneli's greeting and a conversation using the blog context." >}}
+
 *Built for the talking-character lab of my Human–Computer Interaction course at Télécom SudParis.*
 
-*Cover: demonstration image from UndreamAI's [LLM for Unity](https://github.com/undreamai/LLMUnity). Project screenshots are my own.*
+*Project screenshots are my own.*
