@@ -13,33 +13,33 @@ I spend enough time in my room that I know what should be there. A ramp rising t
 
 **3D Gaussian Splatting** creates a representation of a scene from photographs taken from different viewpoints. It uses many small, overlapping 3D Gaussians, with properties such as position, shape, colour and opacity, to reproduce the appearance of the scene when viewed from different angles.
 
-I had already worked with this during my summer internship in ARTEMIS Laboratory, so I wanted to go beyond importing the provided example. I chose to capture my own plush toys and my room.
+I had already worked with this during my summer internship at ARTEMIS Laboratory, so I wanted to go beyond importing the provided example. I chose to capture my own plush toys and my room.
 
 ## Starting with the plush toys
 
 I began with the smaller scene. I placed the plush toys on a surface with good lighting and took photographs from different positions around them, trying to capture their shape and the details of the fabric.
 
-The plush-toy final dataset contained **46 photographs**, filtered from **72** taken photographs.
+The final plush-toy dataset contained **46 photographs**, filtered from the **72** I had taken.
 
 {{< homework-photo src="plush-toys-dataset.jpg" alt="An original dataset photograph of the plush toys on a light blue surface, before background masking." caption="One of the original photographs, before masking the background." >}}
 
-Getting the focus right was not easy. The fur has fine detail, and the camera was not consistently picking it up, this is what eliminated most of my dataset. I had to pay attention to the focus and adjust it as I worked.
+Getting the focus right was not easy. The fur has fine detail, and the camera was not consistently picking it up. This is what eliminated most of my dataset. I had to pay attention to the focus and adjust it as I worked.
 
-Before reconstruction, using OpenCV library I created a mask for each image to separate the toys from the background. The aim was to keep the reconstruction focused on the objects and avoid bringing the surrounding scene into the splat. That added a preparation step, but I wanted the toys to remain separate objects that I could later move trough the Unity Scene.
+Before reconstruction, using the OpenCV library, I created a mask for each image to separate the toys from the background. The aim was to keep the reconstruction focused on the objects and avoid bringing the surrounding scene into the splat. That added a preparation step, but I wanted the toys to remain separate objects that I could later move through the Unity Scene.
 
-I then used **COLMAP** to generate the pointcloud. It finds corresponding features across photographs and estimates both the 3D structure and the camera positions. That gave the Gaussian Splatting training a starting point.
+I then used **COLMAP** to generate the point cloud. It finds corresponding features across photographs and estimates both the 3D structure and the camera positions. That gave the Gaussian Splatting training a starting point.
 
 After the 3DGS training, the plush-toy splat was ready. It was a pretty good result, although there were still some unwanted fragments around it. The Unity screenshots further down show the result.
 
 ## Capturing the whole room
 
-For my room, I used a video instead of taking each photograph separately. After my first attempt of recording it, I learned to move slowly around the room, stopping roughly every one second so the camera could capture a steadier view. I tried to cover all the space as I walked through it.
+For my room, I used a video instead of taking each photograph separately. After my first attempt at recording it, I learned to move slowly around the room, stopping roughly every second so the camera could capture a steadier view. I tried to cover all the space as I walked through it.
 
 {{< homework-photo src="room-dataset-frame.jpg" alt="A frame from the room dataset showing the laptop, monitor and computer desk." caption="A frame from the room dataset." >}}
 
-I also wrote a script to select images from the recording. It divides the video into one second time windows, scores the frames for sharpness, and keeps the sharpest candidate in each window. That way, the dataset is not simply every frame or an image picked blindly at a fixed timestamp.
+I also wrote a script to select images from the recording. It divides the video into one-second time windows, scores the frames for sharpness, and keeps the sharpest candidate in each window. That way, the dataset is not simply every frame or an image picked blindly at a fixed timestamp.
 
-The first video extraction contained **554 frames**, it was discarded because the video passed trough all the studio too fast (even tough it was about 3 min long). The second capture that was about 11 minutes long produced **669 frames**, which were used as input to the recorded reconstruction run, only **658** of them were successfully registered.
+The first video extraction contained **554 frames**. It was discarded because I moved through the whole studio too fast (even though the video was about 3 min long). The second capture that was about 11 minutes long produced **669 frames**, which were used as input to the recorded reconstruction run. Only **658** of them were successfully registered.
 
 This made the capture process quite different from the plush toys. I was moving through a whole environment, with furniture and objects covering parts of one another, while trying to collect enough views of everything I wanted to reconstruct.
 
@@ -53,13 +53,13 @@ It was a very strange result to inspect because I could recognise the room aroun
 
 That was the first cleanup, on the reconstructed point cloud. I then continued with Gaussian Splatting, expecting to see how the room would look after training.
 
-Unfortunately, when performing the Splatting a large unwanted patch appeared in the middle of the room again, and this time was worse because removing it would impact the Splat directly. I went back to CloudCompare and manually cleaned the splat as well, before importing it into Unity.
+Unfortunately, when I performed the Splatting, a large unwanted patch appeared in the middle of the room again, and this time it was worse because removing it would impact the Splat directly. I went back to CloudCompare and manually cleaned the splat as well, before importing it into Unity.
 
 These were two separate interventions: one before training and another afterwards. The second pass removed the large patch, but it did not turn the whole room into a clean reconstruction. There was still noise elsewhere, which is visible in the final views.
 
 ## Bringing the splats into Unity
 
-With both splats ready, I downloaded the [UnityGaussianSplatting project by Aras Pranckevičius](https://github.com/aras-p/UnityGaussianSplatting), following the suggested renderer, and opened its URP example in Unity. Using the Gaussian Splat Renderer component to load my own PLY files.
+With both splats ready, I downloaded the [UnityGaussianSplatting project by Aras Pranckevičius](https://github.com/aras-p/UnityGaussianSplatting), following the suggested renderer, and opened its URP example in Unity. I used the Gaussian Splat Renderer component to load my own PLY files.
 
 Once imported, I had to correct the orientation manually. The plush toys were not initially aligned with the world the way I wanted, so I adjusted their rotation and put the splat under an empty **parent object** in the Hierarchy.
 
@@ -85,6 +85,6 @@ Finally, I placed the separately reconstructed plush toys inside the room, on th
 
 {{< homework-photo src="plush-toys-and-room.png" alt="The combined Unity scene, with Splat_Pelucia and Splat_Quarto in the Hierarchy and the plush toys placed on the room's table." caption="The two separately captured splats together in Unity." >}}
 
-Choosing my own subjects meant dealing with focus, image preparation and reconstruction errors before I even reached the Unity import. My internship experience gave me a starting point, but this room still required much more experience. I do intend to capture it again, this attempt gave me a clearer idea of what I need to be sure along the way.
+Choosing my own subjects meant dealing with focus, image preparation and reconstruction errors before I even reached the Unity import. My internship experience gave me a starting point, but this room still required much more experience. I do intend to capture it again. This attempt gave me a clearer idea of what I need to be sure of along the way.
 
 *Built for the Gaussian Splatting lab of my Human–Computer Interaction course at Télécom SudParis. Creating my own captures was a personal extension of the provided workflow.*

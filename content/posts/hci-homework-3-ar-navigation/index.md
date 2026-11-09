@@ -1,6 +1,6 @@
 +++
 title = "I'd Rather Look at the City"
-date = 2026-11-08
+date = 2026-11-07
 draft = false
 slug = "ar-navigation-paper-prototype"
 description = "Getting lost with Google Maps gave me an idea."
@@ -27,7 +27,7 @@ My first idea is a visible trail along the route, with arrows at turns and a cle
 
 ### Understanding a sign without taking out my phone
 
-Recentely on the Baltics countries, I was completely lost on restauraunt signs, I couldn't undestand even one single word. So the second idea came: an on-demand translation over a sign.
+Recently, in the Baltic countries, I was completely lost when reading restaurant signs. I couldn't understand even one single word. So the second idea came: an on-demand translation over a sign.
 
 I would keep the original visible and make the translation easy to hide. Translating every word in the street at once could become overwhelming.
 
@@ -43,7 +43,7 @@ This could help when looking at a ruin or a square whose earlier appearance is d
 
 ## Making the route with paper
 
-I developed the first idea into a **low-fidelity prototype**: a simple physical version that someone could try before building the product. I placed paper strips and arrows I cutted on the floor to form a route, ending with two paper footprints. The strips connected the route, the arrows indicated direction, and the footprints marked where to stop.
+I developed the first idea into a **low-fidelity prototype**: a simple physical version that someone could try before building the product. I placed paper strips and arrows I had cut on the floor to form a route, ending with two paper footprints. The strips connected the route, the arrows indicated direction, and the footprints marked where to stop.
 
 I set it up inside the residence building where I live. The route went around a corner, giving my friend something to follow beyond a single straight line. This was manageable to build with paper and let me focus on whether the instructions made sense. The paper represented the visual layer that the glasses would eventually display.
 
@@ -61,7 +61,7 @@ I asked a friend to try it in the building. I did not explain the route beforeha
   <figcaption>My friend testing my prototype.</figcaption>
 </figure>
 
-His feedback was that the instructions were easy to follow, but the route had a too much points on the floor, "I am not that dumb". For this short indoor route, the spacing gave him too much information to continue following it.
+His feedback was that the instructions were easy to follow, but the route had too many points on the floor: "I am not that dumb". For this short indoor route, the spacing gave him too much information to continue following it.
 
 The ending was less clear. He stopped at the footprints, but then stayed there without interacting with the destination. The marks communicated a stopping position, but did not explain what should happen next.
 

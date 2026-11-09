@@ -1,6 +1,6 @@
 +++
 title = "Talking to a Local AI in Unity"
-date = 2026-11-08
+date = 2026-11-07
 draft = false
 slug = "talking-to-a-local-ai-in-unity"
 description = "Building a local chatbot in Unity and giving it some context about Joao's Files."
@@ -27,7 +27,7 @@ The agent's initial **System Prompt** asked for natural, brief replies of one to
 
 {{< homework-photo src="model-settings.png" alt="LLM settings showing Qwen 3.5 4B, zero GPU layers, local execution and an 8192-token context size." src2="agent-settings.png" alt2="LLMAgent settings linked to LLM_GameObject, with the initial system prompt requesting brief replies without emojis." caption="The model configuration and the agent's initial instructions." >}}
 
-The **Canvas** holds the interface: an input field for my message, a **Send** button, and a separate panel for the conversation. Inside **ChatScrollView**, the **ChatLogText** element displays the messages. For longer conversations, the layout work involved a **Vertical Layout Group** and **Content Size Fitter** to accommodate the growing history. The distinction between the conversation window and its content mattered: the window should keep its size while the text inside and follow the new text with fluidity while it grows.
+The **Canvas** holds the interface: an input field for my message, a **Send** button, and a separate panel for the conversation. Inside **ChatScrollView**, the **ChatLogText** element displays the messages. For longer conversations, the layout work involved a **Vertical Layout Group** and **Content Size Fitter** to accommodate the growing history. The distinction between the conversation window and its content mattered: the window should keep its size while the text inside grows, and the view should follow the new text smoothly.
 
 ## Making the text readable
 
@@ -79,13 +79,13 @@ In the preview conversation, I asked about the purpose of the blog and then how 
 
 Adding the blog context made the agent more relevant, but it also came with a frustrating delay. I timed three prompts, recording both the wait until text first appeared and the total time until the response finished:
 
-| Prompt  -  |      First text appear  - |     Total response time |
+| Prompt  -  |      First text appears  - |     Total response time |
 | --- | --- | --- |
 | 1     |           7.5 seconds     |   15.3 seconds |
 | 2     |           8.4 seconds     |   11.2 seconds |
 | 3     |           9.3 seconds     |   14.4 seconds |
 
-Across these three prompts, the initial wait increased, although the total response time varied. What bothered me most was the pause before anything appeared. Once the answer started coming through, the generation itself did not feel particularly that slow.
+Across these three prompts, the initial wait increased, although the total response time varied. What bothered me most was the pause before anything appeared. Once the answer started coming through, the generation itself did not feel that slow.
 
 When I removed the added context, the response was immediate. That comparison suggests that processing the extra context and growing conversation was contributing to the delay before generation. I did not separately time that processing, but the difference was very noticeable while using the chat.
 

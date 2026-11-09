@@ -1,6 +1,6 @@
 +++
 title = "A Future Imagined in 1965"
-date = 2026-11-07
+date = 2026-11-06
 draft = false
 slug = "pedro-lopes-ultimate-display"
 description = "Looking at today's headsets and body interfaces through Ivan's 1965 essay."
