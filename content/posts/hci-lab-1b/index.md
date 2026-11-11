@@ -111,4 +111,4 @@ Making this project was a great opportunity for learning Unity, and I am looking
 
 **Tutorial and assets:** I followed [How to Make a Game in Unity 6](https://youtu.be/L-81sc7Alx4) to build the world and used the assets shared with the tutorial.
 
-*Written for Lab 1B of my Human–Computer Interaction course at Télécom SudParis.*
+*Written for Lab 1B of my Human–Computer Interaction course at Institut Polytechnique de Paris.*

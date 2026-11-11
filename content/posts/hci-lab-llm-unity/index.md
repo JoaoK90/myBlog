@@ -99,10 +99,10 @@ The local conversation works, and the waiting indicator makes the delay easier t
 
 ## Giving the character a face
 
-To finish, I added a canelé plush, placed it beside the chat and added an abstract background. With the AI now being called **Caneli**.
+To finish, I added a canelé plush, placed it beside the chat and added an abstract background. The AI is now called **Caneli**.
 
 {{< homework-photo src="Caneli1.png" alt="Caneli beside the Unity chat with an initial greeting and an abstract background." src2="CaneliFinal.png" alt2="Caneli beside a conversation about the purpose of Joao's Files and how to get in touch." caption="Caneli's greeting and a conversation using the blog context." >}}
 
-*Built for the talking-character lab of my Human–Computer Interaction course at Télécom SudParis.*
+*Built for the talking-character lab of my Human–Computer Interaction course at Institut Polytechnique de Paris.*
 
 *Project screenshots are my own.*

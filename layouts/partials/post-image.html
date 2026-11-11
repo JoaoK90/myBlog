@@ -6,6 +6,7 @@
   <div class="post-image">
     <a href="{{ .RelPermalink }}" onclick="event.stopPropagation();" aria-label="{{ i18n "readMore" }} {{ .Title }}">
       <img
+        {{ if .Params.imageFlipHorizontal }}class="post-cover-flipped"{{ end }}
         src="{{ if $imageResource }}{{ $imageResource.RelPermalink }}{{ else }}{{ $image | relURL }}{{ end }}"
         alt="{{ .Params.imageAlt | default (printf "%s — cover image" .Title) }}"
         loading="lazy"

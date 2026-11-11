@@ -46,6 +46,9 @@ body::before { opacity: 0.018; }
 .hero-subtitle { opacity: 1; line-height: 1.65; }
 .hero-logo { animation: none; filter: none; }
 
+.favorite-posts-section { margin-bottom: 3rem; }
+.favorite-posts-section .posts-title { color: var(--accent-light-purple); }
+
 .post-card, .post-image, .post-image-single, .post-toc,
 .related-post-item, .nav-link { border-radius: 12px; }
 .post-card {
@@ -62,6 +65,7 @@ body::before { opacity: 0.018; }
 .single-post { max-width: 780px; }
 .post-image-single { padding: 0; box-shadow: none; }
 .post-image-single img { border-radius: 11px; }
+.post-cover-flipped { scale: -1 1; }
 .post-title-main { font-size: clamp(1.9rem, 4vw, 2.65rem); letter-spacing: -0.025em; }
 .post-description-main { font-size: 1.05rem; line-height: 1.7; max-width: 65ch; }
 .post-content-main { font-size: 1.075rem; line-height: 1.85; }

@@ -5,6 +5,7 @@
 {{ if $image }}
   <div class="post-image-single">
     <img
+      {{ if .Params.imageFlipHorizontal }}class="post-cover-flipped"{{ end }}
       src="{{ if $imageResource }}{{ $imageResource.RelPermalink }}{{ else }}{{ $image | relURL }}{{ end }}"
       alt="{{ .Params.imageAlt | default (printf "%s — cover image" .Title) }}"
       loading="eager"

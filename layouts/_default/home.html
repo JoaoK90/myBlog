@@ -44,10 +44,27 @@
   </section>
 
   <div class="home-container">
+    {{ $posts := where site.RegularPages "Type" "posts" }}
+    {{ $favorites := slice }}
+    {{ range site.Params.homeFavoritePosts }}
+      {{ with site.GetPage . }}
+        {{ $favorites = $favorites | append . }}
+      {{ end }}
+    {{ end }}
+    {{ with $favorites }}
+      <section class="posts-section favorite-posts-section" aria-labelledby="favorite-posts-title">
+        <h2 class="posts-title" id="favorite-posts-title">{{ site.Params.homeFavoritesTitle | default "My favorite posts" }}</h2>
+        <div class="posts-list">
+          {{ range . }}
+            {{ partial "post-card.html" (dict "page" . "limit" 3) }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
     <section class="posts-section">
       <h2 class="posts-title">{{ i18n "recentPosts" }}</h2>
       <div class="posts-list">
-        {{ range where site.RegularPages "Type" "posts" | first 10 }}
+        {{ range $posts | complement $favorites | first 10 }}
           {{ partial "post-card.html" (dict "page" . "limit" 3) }}
         {{ end }}
       </div>

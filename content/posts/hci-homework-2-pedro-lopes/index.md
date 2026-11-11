@@ -94,6 +94,6 @@ Theme parks are one place where I can imagine trying expensive, specialised inte
 
 I will return to theme parks and the idea of convincing virtual worlds in the next post, when I discuss Ivan Sutherland's *The Ultimate Display*.
 
-*Written for Homework 2, Lecture 4, of my Human–Computer Interaction course at Télécom SudParis.*
+*Written for Homework 2, Lecture 4, of my Human–Computer Interaction course at Institut Polytechnique de Paris.*
 
 *Cover: Impacto demonstration, from [Pedro Lopes's project collection](https://lab.plopes.org/). Impacto paper: Pedro Lopes, Alexandra Ion and Patrick Baudisch (2015), “Impacto: Simulating Physical Impact by Combining Tactile Stimulation with Electrical Muscle Stimulation,” UIST. [DOI: 10.1145/2807442.2807443](https://doi.org/10.1145/2807442.2807443).*

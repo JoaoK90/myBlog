@@ -75,6 +75,6 @@ I have high hopes for where this research could go. We keep finding patterns and
 
 {{< homework-photo src="neuralink-terry-speaking-with-the-mind.png" alt="Screenshot from Neuralink's video showing recorded neural activity, the decoded words I love you, and Terry speaking with his wife." caption="Terry communicating with his wife. [Speaking With The Mind](https://www.youtube.com/watch?v=_j806JHhCRo)." >}}
 
-*Written for Homework 2, Lectures 5 and 6, of my Human–Computer Interaction course at Télécom SudParis.*
+*Written for Homework 2, Lectures 5 and 6, of my Human–Computer Interaction course at Institut Polytechnique de Paris.*
 
 *Cover image: Meta. Product information checked on 7 November 2026.*

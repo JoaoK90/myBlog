@@ -107,6 +107,6 @@ I started this assignment looking for examples to photograph. I ended up noticin
 
 As an engineering student, that's something I want to remember when I build my own projects. Getting a feature to work is satisfying. Watching someone else try to use it and completely break my expectations may tell me something my code never will.
 
-*Written for Homework 1 of my Human–Computer Interaction course at Télécom SudParis.*
+*Written for Homework 1 of my Human–Computer Interaction course at Institut Polytechnique de Paris.*
 
 *Cover image: [original image supplied for this post](https://www.chrbutler.com/gestalt-principles-of-design-symmetry).*

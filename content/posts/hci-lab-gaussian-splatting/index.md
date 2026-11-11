@@ -87,4 +87,4 @@ Finally, I placed the separately reconstructed plush toys inside the room, on th
 
 Choosing my own subjects meant dealing with focus, image preparation and reconstruction errors before I even reached the Unity import. My internship experience gave me a starting point, but this room still required much more experience. I do intend to capture it again. This attempt gave me a clearer idea of what I need to be sure of along the way.
 
-*Built for the Gaussian Splatting lab of my Human–Computer Interaction course at Télécom SudParis. Creating my own captures was a personal extension of the provided workflow.*
+*Built for the Gaussian Splatting lab of my Human–Computer Interaction course at Institut Polytechnique de Paris. Creating my own captures was a personal extension of the provided workflow.*

@@ -77,4 +77,4 @@ The two footprints were enough to make him stop. My next version needs to make i
 
 {{< homework-photo src="paper-path-maisel.jpeg" alt="My friend at the start of the paper trail in the Maisel residence, with arrows leading around the corridor to two footprints." >}}
 
-*Written for Homework 3, Lectures 7, 8 and 9, of my Human–Computer Interaction course at Télécom SudParis. The images illustrate the proposed AR concepts; only the navigation concept was prototyped and tested.*
+*Written for Homework 3, Lectures 7, 8 and 9, of my Human–Computer Interaction course at Institut Polytechnique de Paris. The images illustrate the proposed AR concepts; only the navigation concept was prototyped and tested.*

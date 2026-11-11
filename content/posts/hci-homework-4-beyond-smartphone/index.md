@@ -5,8 +5,10 @@ draft = false
 slug = "what-comes-after-the-smartphone"
 description = "Dreaming about having my family beside me."
 tags = ["HCI", "Homework", "Mixed Reality", "Ubiquitous Computing", "Design"]
-image = "meta-vr-glasses-cover.jpg"
-imageAlt = "A person wearing the Meta VR Glasses announced in September 2026."
+image = "brain-implant-cover.jpg"
+imageFlipHorizontal = true
+imageAlt = "Illustration of a blue human head with a microchip connected to the brain."
+imageSource = "https://images.ladepeche.fr/api/v1/images/view/65b90f37bf74c42f8532d7ae/large/image.jpg?v=1"
 +++
 
 I already wear glasses. Imagining that the same frames could one day replace my phone feels like a natural next step: one less object to carry, with information available where I am looking.
@@ -109,6 +111,6 @@ People could use this whenever they watch a film, provided the display and comfo
 
 Of these three, entertainment would be easy for me to imagine using. But seeing my family beside me is the strongest reason. A smaller computer is an impressive engineering achievement; sharing an ordinary conversation with my mum while I wash the dishes is what would make that achievement personal.
 
-*Written for Homework 4, Lectures 10, 11 and 12, of my Human–Computer Interaction course at Télécom SudParis.*
+*Written for Homework 4, Lectures 10, 11 and 12, of my Human–Computer Interaction course at Institut Polytechnique de Paris.*
 
 *Cover image: Meta. The three application sketches illustrate imagined interfaces. Product information checked on 8 November 2026.*

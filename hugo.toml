@@ -5,7 +5,7 @@ title = "Joao’s files"
 # See: https://gohugo.io/content-management/multilingual/
 # =============================================================================
 
-baseURL = 'https://joaok90.github.io/myBlog/'
+baseURL = 'https://joaok90.github.io/'
 theme = "mana"
 defaultContentLanguage = "en"
 
@@ -46,6 +46,13 @@ defaultContentLanguage = "en"
   heroTitleLine1 = "Joao’s files"
   heroTitleLine2 = "somewhere between real and virtual"
   footerText = "Built with Hugo and Mana theme"
+  homeFavoritesTitle = "My favorite posts"
+  homeFavoritePosts = [
+    "/posts/hci-lab-gaussian-splatting",
+    "/posts/toc-game-simulator",
+    "/posts/hci-homework-2-ultimate-display",
+    "/posts/hci-homework-2-pedro-lopes",
+  ]
 
   [params.avatar.home]
     assetPath = "images/joao-between-real-and-virtual-transparent.png"
