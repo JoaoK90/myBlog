@@ -1,4 +1,4 @@
-// Search the complete posts list before paginating the matching cards.
+// Search and filter the complete posts list without pagination.
 function initFilters() {
   const postsContainer = document.getElementById("posts-container");
   if (!postsContainer || !document.getElementById("post-search-input") || postsContainer.dataset.filtersReady) return;
@@ -11,12 +11,6 @@ function initFilters() {
   const filteredCount = document.getElementById("filtered-count");
   const countLabel = document.getElementById("filtered-count-label");
   const noResults = document.getElementById("posts-no-results");
-  const pagination = document.getElementById("posts-pagination");
-  const previousPage = document.getElementById("posts-page-prev");
-  const nextPage = document.getElementById("posts-page-next");
-  const pageInfo = document.getElementById("posts-page-info");
-  const pageSize = Math.max(1, Number.parseInt(postsContainer.dataset.pageSize, 10) || 10);
-  let currentPage = Number.parseInt(postsContainer.dataset.initialPage, 10) || 1;
 
   function normalize(value) {
     return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -40,8 +34,7 @@ function initFilters() {
     tagSearchEmpty.hidden = visibleTags > 0;
   }
 
-  function applyFilters(resetPage = true) {
-    if (resetPage) currentPage = 1;
+  function applyFilters() {
     const selectedTags = tagInputs.filter((input) => input.checked).map((input) => input.value);
     const words = normalize(postSearchInput.value).split(/\s+/).filter(Boolean);
     const matches = posts.filter((post) => {
@@ -49,20 +42,12 @@ function initFilters() {
       const matchesWords = !words.length || words.some((word) => post.text.includes(word));
       return matchesTags && matchesWords;
     });
-    const totalPages = Math.max(1, Math.ceil(matches.length / pageSize));
-    currentPage = Math.min(Math.max(1, currentPage), totalPages);
-
     posts.forEach((post) => { post.card.hidden = true; });
-    const start = (currentPage - 1) * pageSize;
-    matches.slice(start, start + pageSize).forEach((post) => { post.card.hidden = false; });
+    matches.forEach((post) => { post.card.hidden = false; });
 
     filteredCount.textContent = matches.length;
     countLabel.textContent = matches.length === 1 ? countLabel.dataset.singular : countLabel.dataset.plural;
     noResults.hidden = matches.length > 0;
-    pagination.hidden = totalPages <= 1;
-    previousPage.disabled = currentPage === 1;
-    nextPage.disabled = currentPage === totalPages;
-    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
   }
 
   tagSearchInput.addEventListener("input", updateTagList);
@@ -80,17 +65,6 @@ function initFilters() {
     applyFilters();
   });
 
-  previousPage.addEventListener("click", () => {
-    currentPage--;
-    applyFilters(false);
-    postsContainer.scrollIntoView({ block: "start", behavior: "auto" });
-  });
-  nextPage.addEventListener("click", () => {
-    currentPage++;
-    applyFilters(false);
-    postsContainer.scrollIntoView({ block: "start", behavior: "auto" });
-  });
-
   const toggle = document.getElementById("filter-toggle-btn");
   const content = document.getElementById("posts-filter-content");
   toggle.addEventListener("click", () => {
@@ -102,7 +76,7 @@ function initFilters() {
   });
 
   updateTagList();
-  applyFilters(false);
+  applyFilters();
 }
 
 if (document.readyState === "loading") {

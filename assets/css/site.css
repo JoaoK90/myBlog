@@ -139,7 +139,6 @@ body::before { opacity: 0.018; }
 #posts-filter-content[hidden],
 #all-tags-container .filter-tag-checkbox[hidden],
 #posts-container .post-card[hidden],
-#posts-pagination[hidden],
 #posts-no-results[hidden],
 #tag-search-empty[hidden] { display: none; }
 
@@ -172,9 +171,6 @@ body::before { opacity: 0.018; }
   border: 1px solid var(--border-color);
   border-radius: 12px;
 }
-.posts-pagination { gap: 0.75rem; }
-.posts-pagination button { font: inherit; cursor: pointer; border: 1px solid var(--border-color); }
-.posts-pagination button:disabled { opacity: 0.45; cursor: default; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ $allPosts := where site.RegularPages "Type" "posts" }}
-  {{ $paginator := .Paginate $allPosts }}
   {{ $allTags := slice }}
   {{ range $allPosts }}
     {{ range .Params.tags }}
@@ -56,19 +55,14 @@
       </div>
     </div>
 
-    {{/* Include every post so filtering also finds matches beyond the first page. */}}
-    <div class="posts-list" id="posts-container" data-page-size="{{ $paginator.PagerSize }}" data-initial-page="{{ $paginator.PageNumber }}">
+    {{/* Render every post; filters show all matching cards without pagination. */}}
+    <div class="posts-list" id="posts-container">
       {{ range $allPosts }}
         {{ partial "post-card.html" (dict "page" . "limit" 3 "searchable" true) }}
       {{ end }}
     </div>
     <p id="posts-no-results" class="posts-no-results" role="status" hidden>No posts match your search. Try another word or clear the filters.</p>
 
-    <nav id="posts-pagination" class="pagination posts-pagination" aria-label="Posts pagination" hidden>
-      <button id="posts-page-prev" class="pagination-link" type="button">{{ i18n "paginationPrev" }}</button>
-      <span id="posts-page-info" class="pagination-info" aria-live="polite"></span>
-      <button id="posts-page-next" class="pagination-link" type="button">{{ i18n "paginationNext" }}</button>
-    </nav>
     {{ partial "back-to-home.html" . }}
   </div>
 {{ end }}
